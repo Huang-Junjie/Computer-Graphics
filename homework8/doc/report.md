@@ -29,7 +29,7 @@
    }
    ```
 
-3. 定义 Bernstein 基函数：$$B_{i,n}(t) = \frac{n!}{i!(n-i)!}t^i(1-t)^{n-i}, i=0,1...n$$
+3. 定义 Bernstein 基函数：$$ B_{i,n}(t) = \frac{n!}{i!(n-i)!}t^i(1-t)^{n-i}, i=0,1...n $$
 
    ```cpp
    float bernstein(int i, int n, float t) {
@@ -64,7 +64,7 @@
 
    效果如下：![](images/img1.png)
 
-5. 绘制Bezier曲线：计算100个Bezier曲线上的点的坐标，绘制这100个点的连线，用来逼近Bezier曲线。Bezier曲线上的点的坐标计算公式为：$$Q(t) = \sum _{i=0}^nP_iB_{i,n}(t)$$
+5. 绘制Bezier曲线：计算100个Bezier曲线上的点的坐标，绘制这100个点的连线，用来逼近Bezier曲线。Bezier曲线上的点的坐标计算公式为：$$ Q(t) = \sum _{i=0}^nP_iB_{i,n}(t) $$
 
    ```cpp
    //给曲线顶点数据赋值
